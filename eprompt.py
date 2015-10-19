@@ -5,6 +5,7 @@
  eprompt.py
  Simple python terminal simulator based on Elliot's terminal
  Version 0.1, lot of known bugs.
+ I recommend that you test it in a virtual machine, since it can delete your command history.
 
  AUTHOR
  
