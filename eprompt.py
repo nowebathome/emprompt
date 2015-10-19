@@ -169,9 +169,9 @@ while True:
 				break
 			x+=1
 		else:
-			command+=" > /tmp/tempfile"
+			command+=" > tempfile"
 			os.system(command)
-			f=open("/tmp/tempfile", "r")
+			f=open("tempfile", "r")
 			q=f.readlines()
 			for line in q:
 				sys.stdout.write(prompt+line)
