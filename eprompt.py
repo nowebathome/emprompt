@@ -4,6 +4,7 @@
 '''
  eprompt.py
  Simple python terminal simulator based on Elliot's terminal
+ Version 0.1, lot of known bugs.
 
  AUTHOR
  
@@ -168,9 +169,9 @@ while True:
 				break
 			x+=1
 		else:
-			command+=" > tempfile"
+			command+=" > /tmp/tempfile"
 			os.system(command)
-			f=open("tempfile", "r")
+			f=open("/tmp/tempfile", "r")
 			q=f.readlines()
 			for line in q:
 				sys.stdout.write(prompt+line)
